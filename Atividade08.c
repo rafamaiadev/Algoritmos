@@ -9,4 +9,6 @@ int main() {
 	c = k-273.15;
 	
 	printf("O valor em Celsius e: %f \n", c);
+	
+	return 0;
 }
