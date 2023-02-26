@@ -9,4 +9,6 @@ int main(){
 	km = mi*1.61;
 	
 	printf("O valor em km e: %f", km);
+	
+	return 0;
 }
