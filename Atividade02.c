@@ -9,4 +9,6 @@ main () {
 	
 	printf("O numero informado e: %f", peso);
 	
+	return 0;
+	
 }
