@@ -9,4 +9,6 @@ int main() {
 	c = (f-32)/1.8;
 	
 	printf("O valor em Celsius e: %f", c);
+	
+	return 0;
 }
