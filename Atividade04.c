@@ -9,5 +9,7 @@ int main (){
     m = n1*n1;
 	
 	printf("O quadrado do numero e: %f", m);
+	
+	return 0;
 		
 }
