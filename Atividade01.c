@@ -6,4 +6,5 @@ int main(){
 	printf("Digite uma idade: \n");
 	scanf("%d", &idade);
 	printf("a idade informada e: %d. \n", idade);
+	return 0;
 }
