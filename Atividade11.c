@@ -9,4 +9,6 @@ int main(){
 	kh = ms*3.6;
 	
 	printf("O valor da velocidade em kh e: %f", kh);
+	
+	return 0;
 }
