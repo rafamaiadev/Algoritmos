@@ -10,4 +10,5 @@ int main(){
 	
 	printf("O valor em Fahrenheit e: %f", f);
 	
+	return 0;
 }
