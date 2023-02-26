@@ -10,4 +10,5 @@ int main(){
 	
 	printf("O valor da divisao e: %f", d);
 	
+	return 0;	
 }
