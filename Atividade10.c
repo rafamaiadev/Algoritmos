@@ -9,4 +9,6 @@ int main() {
 	ms = kh/3.6;
 	
 	printf("O valor em ms e: %f", ms);
+	
+	return 0;
 }
