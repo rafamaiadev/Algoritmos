@@ -9,4 +9,6 @@ int main() {
 	anoNascimento = anoAtual - idadeAtual;
 	
 	printf("O ano de nascimento e: %d", anoNascimento);
+	
+	return 0;
 }
