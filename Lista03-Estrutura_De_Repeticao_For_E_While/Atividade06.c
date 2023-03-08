@@ -10,6 +10,7 @@ int main() {
 	scanf("%d", &r);
 	
 	printf("Os 10 primeiros elementos da PA sao: \n");
+	
 	for(i = 0; i<10; i++) {
 		
 		n = a1+i*r;
@@ -18,8 +19,7 @@ int main() {
 		
 		printf("%d \n", n);
 	}
-	
-	
-	
 	printf("A soma dos elementos e: %d", soma); 
+	
+	return 0;
 }
