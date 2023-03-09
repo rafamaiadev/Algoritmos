@@ -6,7 +6,7 @@ int main() {
 	char sexo;
 	while(i < 5) {
 		printf("Digite a idade e o sexo (F/M) da pessoa:");
-		scanf("%d", &idade);
+		scanf("%d %c", &idade, &sexo);
 		
 		mediaGrupo += idade;
 		
@@ -23,15 +23,15 @@ int main() {
 		i++;		 				
         }
         
-        printf("%d homens foram cadastrados", homens);
+        printf("%d homens foram cadastrados\n", homens);
         
-        printf("%d mulheres foram cadastradas", mulheres);
+        printf("%d mulheres foram cadastradas\n", mulheres);
         
-        printf("A media do grupo e %.2f", mediaGrupo/5);
+        printf("A media do grupo e %.2f\n", mediaGrupo/5);
         
-        printf("A media do homens e %.2f", mediaHomens/homens);
+        printf("A media do homens e %.2f\n", mediaHomens/homens);
         
-        printf("%d mulheres tem mais de 20 anos", mulheresMaisDe20);
+        printf("%d mulheres tem mais de 20 anos\n", mulheresMaisDe20);
         
         return 0;
    }
