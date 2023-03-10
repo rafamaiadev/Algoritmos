@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-	int valorHora, horasTrabalhadas, salario, salarioBonus1, salarioBonus2;
+	int valorHora, horasTrabalhadas, salario = 0, bonus = 0;
 	
 	printf("Insira o valor da hora de trabalho:\n");
 	scanf("%d", &valorHora);
@@ -13,20 +13,21 @@ int main() {
 		
 		salario = valorHora*horasTrabalhadas;
 		
-		printf("O salario semanal e: %d", salario);
-		
-	} else if(horasTrabalhadas > 40 && horasTrabalhadas <= 60) {
-		
-		salarioBonus1 = 1.5*(valorHora*horasTrabalhadas);
-		
-		printf("O salario semanal e: %d", salarioBonus1);
+	} else if(horasTrabalhadas <= 60) {
+		salario = valorHora*40;
+			
+		bonus = valorHora*(horasTrabalhadas-40) *1.5;
 		
 	} else {
+		salario = valorHora*40;
 		
-		salarioBonus2 = 2*(valorHora*horasTrabalhadas);
+		bonus = valorHora*20*1.5;
 		
-		printf("O salario semanal e: %d", salarioBonus2);
+		bonus += valorHora*(horasTrabalhadas-60)*2;
 	}
+	
+	salario += bonus;
+	printf("O salario semanal e: %d", salario);
 	
 	return 0;
 }
