@@ -10,12 +10,12 @@ int main() {
 		scanf("%d", &A[i]);
 		
 		if(A[i] % 2 != 0) {
-			printf("O número digitado não é par.\n");
+			printf("O nÃºmero digitado nÃ£o Ã© par.\n");
 			i--;
 		}
 	}
 	
-	printf("Os números em ordem inversa são: \n");
+	printf("Os nÃºmeros em ordem inversa sÃ£o: \n");
 	for(i=5; i>=0; i--) {
 		printf("%d\n", A[i]);
 	}
