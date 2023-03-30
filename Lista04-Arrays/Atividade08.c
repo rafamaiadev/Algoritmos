@@ -9,7 +9,7 @@ int main() {
 	for(i=0; i<6; i++) {
 		scanf("%d", &A[i]);
 	}
-	printf("Os valores em ordem inversa são: \n");
+	printf("Os valores em ordem inversa sÃ£o: \n");
 	for(i=5; i>=0; i--) {
 		printf("%d\n", A[i]);
 	}
