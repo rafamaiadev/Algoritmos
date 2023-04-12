@@ -7,12 +7,12 @@ int main() {
 	float soma = 0;
 	
 	for(i=0; i<15; i++) {
-		printf("Digite um nÃºmero para cada nota: ");
+		printf("Digite um número para cada nota: ");
 		scanf("%d", &A[i]);
 		soma += A[i];
 	}
 	
-	printf("A mÃ©dia das notas Ã©: %.2f", soma/15);
+	printf("A média das notas é: %.2f", soma/15);
 	
 	return 0; 
 }
