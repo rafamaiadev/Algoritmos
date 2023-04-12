@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 int main() {
-	int i, j, v[5], k = 2, contRepetidos = 0, elemRepetidos = 0;
-	int repetidoAntes = 0;
+	#include <stdio.h>
+
+int main() {
+	int i, v[5], k = 2, contRepetidos = 0, elemRepetidos = 0;
 	printf("O numero da constante k e igual a 2:\n");
 	printf("Digite 5 valores e verifique quantos se repetem k vezes: \n");
 	for(i=0; i<5; i++) {
@@ -10,23 +12,16 @@ int main() {
 	}
 	
 	for(i=0; i<5; i++) {
-		contRepetidos = 1;
-		for(j=0; j<5; j++) {
-			if(i != j && v[i] == v[j]) {
-				contRepetidos++;
-			}
+		contRepetidos = 0;
+		
+		if(i == 4) {
+			break;
+		}
+		if(v[i] == v[i+1]) {
+			contRepetidos = k;
 		}
 		if(contRepetidos == k) {
-			for(j=0; j<i; j++) {
-				if(v[i] == v[j]) {
-					repetidoAntes = 1;
-					break;
-				}
-			}
-			if(!repetidoAntes) {
 			elemRepetidos++;
-		}
-		
 		}
 	}
 	
@@ -37,4 +32,5 @@ int main() {
 	}
 	
 	return 0;
+}
 }
