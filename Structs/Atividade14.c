@@ -43,4 +43,6 @@ int main() {
 		inserirCarros();
 		
 	}
+	
+	return 0;
 }

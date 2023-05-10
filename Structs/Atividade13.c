@@ -65,6 +65,8 @@ int main() {
 	printf("Cidade: %s\n", usuario.cidade);
 	printf("CEP: %s\n", usuario.cep);
 	printf("Email: %s", usuario.email);
+	
+	return 0;
 }
 	
 	

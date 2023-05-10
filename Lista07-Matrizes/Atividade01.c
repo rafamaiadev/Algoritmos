@@ -28,4 +28,6 @@ int main() {
 	for(i=0; i<6; i++) {
 		printf("%d ", v[i]);
 	}
+	
+	return 0;
 }
