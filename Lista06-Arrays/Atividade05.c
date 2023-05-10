@@ -1,12 +1,8 @@
 #include <stdio.h>
 
 int main() {
-	#include <stdio.h>
-
-int main() {
-	int i, v[5], k = 2, contRepetidos = 0, elemRepetidos = 0;
-	printf("O numero da constante k e igual a 2:\n");
-	printf("Digite 5 valores e verifique quantos se repetem k vezes: \n");
+	int i, v[5], contRepetidos = 0, elemRepetidos = 0;
+	printf("Digite 5 valores e verifique \nquantos se repetem em sequencia: \n");
 	for(i=0; i<5; i++) {
 		scanf("%d", &v[i]);
 	}
@@ -18,19 +14,19 @@ int main() {
 			break;
 		}
 		if(v[i] == v[i+1]) {
-			contRepetidos = k;
+			contRepetidos = 2;
 		}
-		if(contRepetidos == k) {
+		if(contRepetidos == 2) {
 			elemRepetidos++;
 		}
 	}
 	
 	if(elemRepetidos > 0) {
-		printf("Existem %d elementos que se repetem k vezes.", elemRepetidos);
+		printf("Existem %d elementos que se repetem em sequencia.", elemRepetidos);
 	} else {
-		printf("Nao existem elementos que se repetem k vezes.");
+		printf("Nao existem elementos que se repetem em sequencia.");
 	}
 	
 	return 0;
 }
-}
+

@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 int main() {
-	int i, j, v[5], k = 2, contRepetidos = 0, elemRepetidos = 0;
+	int i, j, v[5], k, contRepetidos = 0, elemRepetidos = 0;
 	int repetidoAntes = 0;
-	printf("O numero da constante k e igual a 2:\n");
+	printf("Digite um numero para k de (2-5):\n");
+	scanf("%d", &k);
 	printf("Digite 5 valores e verifique quantos se repetem k vezes: \n");
 	for(i=0; i<5; i++) {
 		scanf("%d", &v[i]);
