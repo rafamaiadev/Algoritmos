@@ -1,16 +1,21 @@
 # include <stdio.h>
 
-int Verificador(int num1) {
+int Verificador() {
+	int verificador;
+	printf("Digite um digito para ser verificado o seu sinal: ");
+	scanf("%d", &verificador);
 	
-	if(num1 > 0) {
-		printf("1");
-	} else if(num1 == 0) {
-		printf("0");
+	if(verificador > 0) {
+		verificador = 1;
+	} else if(verificador == 0) {
+		verificador = 0;
 	} else {
-		printf("-1");
+		verificador = -1;
 	}
+	
+	return printf("Retorno = %d", verificador);
 }
 
 int main() {
-	Verificador(-5);
+	Verificador();
 }
