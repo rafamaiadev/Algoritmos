@@ -8,6 +8,7 @@ struct Carro {
 
 int i;
 float p = -1;
+
 inserirCarros() {
 	for(i=0; i<2; i++) {
 		printf("Digite a marca do carro %d (Max 15 letras):", i+1);
@@ -21,8 +22,10 @@ inserirCarros() {
 	}
 	
 	system("cls");
-	
-	printf("---Carros com preco menor que p---\n");
+}
+
+verificarCarros() {
+	printf("--- Carros com preco menor que p ---\n");
 	for(i=0; i<2; i++) {
 		if(carro[i].preco < p) {
 			printf("Marca: %s\n", carro[i].marca);
@@ -31,17 +34,16 @@ inserirCarros() {
 			printf("\n");		
 		} 			
 	}
-		
-	
 }
 int main() {
+	
+	inserirCarros();
 	
 	while(p != 0) {	
 		printf("Insira um valor para p (digite 0 para encerrar):");
 		scanf("%f", &p);
 		
-		inserirCarros();
-		
+		verificarCarros();
 	}
 	
 	return 0;
