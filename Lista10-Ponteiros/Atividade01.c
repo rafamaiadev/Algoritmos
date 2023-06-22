@@ -10,7 +10,9 @@ struct Produto {
 	int quantidade;
 };
 
-void cadastrarProduto(struct Produto *produtoPtr) {
+typedef struct Produto Produto;
+
+void cadastrarProduto(Produto *produtoPtr) {
 	printf("Digite o codigo do produto: ");
 	scanf("%d", &produtoPtr->codigo);
 		
@@ -25,18 +27,19 @@ void cadastrarProduto(struct Produto *produtoPtr) {
 	
 }
 
-void consultarProduto (struct Produto *produtoPtr) {
+
+void consultarProduto (Produto *produtoPtr) {
 	printf("Nome: %s\n", produtoPtr->nome);
 	printf("Codigo: %d\n", produtoPtr->codigo);
 	printf("Preco: %.2f\n", produtoPtr->preco);
 	printf("Quantidade disponivel: %d\n", produtoPtr->quantidade);
 }
 
-void atualizarQuantidade (struct Produto *produtoPtr) {
+void atualizarQuantidade (Produto *produtoPtr) {
 	scanf("%d", &produtoPtr->quantidade);
 }
 
-void exibirTotalEstoque (struct Produto *produtoPtr){
+void exibirTotalEstoque (Produto *produtoPtr){
 	printf("Nome: %s\n", produtoPtr->nome);
 	printf("Codigo: %d\n", produtoPtr->codigo);
 	printf("Quantidade: %d\b", produtoPtr->quantidade);
@@ -44,7 +47,7 @@ void exibirTotalEstoque (struct Produto *produtoPtr){
 } 
 int main() {
 	int i;
-	struct Produto produto[MAX_PROD];
+	Produto produto[MAX_PROD];
 	
 	for(i=0; i<MAX_PROD; i++) {
 		printf("Cadastro do produto %d:\n", i + 1);
